@@ -1,0 +1,9 @@
+<section class="pricing py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let card of cards">
+        <app-card [title]="card.title" [price]="card.price" [features]="card.features" [textSymbol]="card.textSymbol"></app-card>
+      </div>
+    </div>
+  </div>
+</section>
